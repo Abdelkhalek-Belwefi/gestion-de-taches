@@ -1,0 +1,160 @@
+/* CSS for Space Livreur */
+
+.space-livreur {
+  font-family: Arial, sans-serif;
+  background: url('../interf.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.header-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+.notification-bubble,
+.profile-bubble {
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.notification-bubble img,
+.profile-bubble img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.notification-dropdown,
+.profile-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #bf9898;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 200px;
+  z-index: 1000;
+}
+
+.notification-dropdown p,
+.profile-dropdown ul {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+.profile-dropdown ul li {
+  padding: 10px;
+  color: black;
+  border-bottom: 1px solid #bd1717;
+}
+
+.profile-dropdown ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.profile-dropdown ul li:hover {
+  background-color: #f4f4f9;
+}
+
+.tasks-title {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.column-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.column-card {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.column-card:hover {
+  transform: scale(1.05);
+}
+
+.column-card.selected {
+  background-color: #6200ea;
+  color: white;
+}
+
+.column-section {
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.task-table th {
+  background-color: #6200ea;
+  color: white;
+}
+
+.task-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.task-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.login-container {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.login-container button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #3700b3;
+}
+
+.action-btn {
+  border-radius: 18px;
+}

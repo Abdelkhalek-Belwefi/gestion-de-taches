@@ -1,0 +1,111 @@
+/* Arrière-plan de la page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0a3d62, #0fbcf9);
+  background-image: url("./logi.png"); /* Remplacez par votre image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Conteneur principal */
+.login-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  backdrop-filter: blur(10px);
+}
+
+/* Formulaire */
+.login-form h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+ 
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Options */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.options a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Bouton */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background: #1e90ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  background: #3742fa;
+}
+
+/* Texte de redirection */
+.login-form p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+.login-form p a {
+  color: #ffffff;
+  text-decoration: none;
+  
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+}

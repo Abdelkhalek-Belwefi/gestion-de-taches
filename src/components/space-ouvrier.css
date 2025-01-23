@@ -1,0 +1,116 @@
+/* Global Styling */
+.task-manager {
+    font-family: Arial, sans-serif;
+    padding: 200px;
+    max-width: 12000px;
+    margin: auto;
+    color: #333;
+  }
+  
+  /* Title Styling */
+  .colonne-title {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #01ff1a;
+  }
+  
+  /* Colonne Cards */
+  .colonne-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 105px;
+    margin-bottom: 30px;
+  }
+  
+  .colonne-card {
+    background-color: #9e6ec5;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .colonne-card:hover {
+    background-color: #eef5ff;
+    transform: translateY(-5px);
+  }
+  
+  .colonne-card.selected {
+    background-color: #9e6ec5;
+    border-color: #0056b3;
+  }
+  
+  /* Section Header */
+  .section-head {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  /* No Colonne Message */
+  .no-colonne-message {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Table Styling */
+  .task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+  }
+  
+  .task-table th,
+  .task-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .task-table th {
+    background-color: #0056b3;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .task-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .task-table tr:hover {
+    background-color: #eef5ff;
+  }
+  
+  .task-table td {
+    color: #333;
+  }
+  
+  /* Highlighting Priority */
+  .task-table td:nth-child(7) {
+    font-weight: bold;
+  }
+  
+  .task-table td:nth-child(7):contains('haute') {
+    color: red;
+  }
+  
+  .task-table td:nth-child(7):contains('moyenne') {
+    color: orange;
+  }
+  
+  .task-table td:nth-child(7):contains('basse') {
+    color: green;
+  }
+  .bt2{
+    background-color: #90b7e1;
+    border-radius: 15px;
+  }
+  

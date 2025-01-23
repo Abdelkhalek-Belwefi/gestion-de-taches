@@ -1,0 +1,60 @@
+/* CSS pour la page Learn */
+
+/* Conteneur principal */
+.learn-container {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(-45deg, #b42121, #e6e6e6, #f0f0f0, #db9393);
+    background-size: 400% 400%;
+    animation: gradientBG 2s ease infinite;
+    padding: 50px 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Conteneur de l'image */
+  .learn-image-container {
+    margin-bottom: 30px;
+  }
+  
+  /* Image */
+  .learn-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Titre */
+  .learn-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Paragraphe */
+  .learn-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .learn-title {
+      font-size: 2rem;
+    }
+  
+    .learn-paragraph {
+      font-size: 1rem;
+      padding: 15px;
+    }
+  }
+  

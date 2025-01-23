@@ -1,0 +1,25 @@
+.h-about{
+    color: black;
+}
+
+.dark-mode-toggle {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #e0e0e0;
+}
+
+.dark-mode-toggle.active {
+    background-color: #333;
+}
+
+.dark-mode-toggle.active:hover {
+    background-color: #444;
+}

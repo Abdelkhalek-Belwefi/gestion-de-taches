@@ -1,0 +1,36 @@
+{
+  "Header": {
+    "title": "   Accueillir ",
+    "paragraph": "Best-Delivery est une entreprise de livraison de premier plan, dédiée à offrir des services de transport rapide et fiable. Nous nous engageons à fournir des solutions logistiques de haute qualité pour satisfaire les besoins de nos clients, qu'il s'agisse de livraisons locales ou internationales. Avec une équipe expérimentée et une technologie de suivi avancée, Best-Delivery garantit que chaque colis arrive à destination en toute sécurité et dans les délais. Nous mettons l'accent sur la satisfaction du client en offrant une expérience de livraison simple, efficace et sans tracas."
+  },
+  "About": {
+    "paragraph": "",
+    "largeImage": "img/about.jpg"
+  },
+  
+  
+
+    "login": [  
+      {
+        "label": "Email",
+        "type": "email",
+        "placeholder": "Enter your email"
+      },
+      {
+        "label": "Password",
+        "type": "password",
+        "placeholder": "Enter your password"
+      }
+    ]
+  ,
+  
+  "Contact": {
+    "address": "4321 California St, San Francisco, CA 12345 ",
+    "phone": "+1 123 456 1234",
+    "email": "info@company.com",
+    "facebook": "https://www.facebook.com/provestasoftware",
+    "twitter": "twitter.com",
+    "youtube": "https://youtu.be/5C1a4pdS8Wo"
+  }
+
+}

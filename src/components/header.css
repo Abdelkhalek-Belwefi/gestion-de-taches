@@ -1,0 +1,78 @@
+
+
+/* Header Section */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 7;
+      transform: translateY(0);
+    }
+  }
+  
+  .intro {
+    display: table;
+    width: 100%;
+    padding: 0;
+    background: url(../intro-bg.png) center center no-repeat;
+  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .intro .overlay {
+    background: rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-out;
+  }
+    .intro h1 {
+      
+      font-family: "Raleway", Georgia, 'Times New Roman', Times, serif;
+      color: #5ca9fb;
+      font-size: 74px;
+      font-weight: 700px;
+      text-transform: uppercase;
+      margin-top: 10;
+      margin-bottom: 10px;
+      animation: fadeIn 2.5s ease-out;
+      text-align: center ;
+      padding-top: 150px;
+      text-decoration: none;
+    }
+  
+    .intro h1 span {
+      font-weight: 800;
+      color: #f4f4f4;
+      animation: fadeIn 3s ease-out;
+      font-weight: bold;
+      
+    }
+  
+    .intro p {
+      color: #dfdfdf;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 30px;
+      margin: 0;
+      margin-bottom: 60px;
+      animation: fadeIn 3.5s ease-out;
+      text-align: center;
+      padding-left: 5px;
+    
+    }
+  
+    header .intro-text {
+      padding-top: 15px;
+      padding-bottom: 200px;
+      text-align: left;
+      animation: fadeIn 4s ease-out;
+    }
+    .learn{
+      border-radius: 20px;
+      background-color: #000000;
+      float: left;
+    }

@@ -1,0 +1,161 @@
+/* Main container */
+.task-manager {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.category-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.category-cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.category-card {
+ background: url('../back.png');
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-card.selected {
+  border-color: #4caf50;
+  background-color: #eaf5e7;
+}
+
+.category-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.category-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #eaf5e7;
+}
+
+.category-card p {
+  font-size: 14px;
+  color: #555;
+  color: #eaf5e7;
+}
+
+.category-section {
+  margin-top: 30px;
+  padding: 120px;
+  
+  border: 1px solid #ddd;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.no-category-message {
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+form label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+form input[type="text"],
+form input[type="date"] {
+  width: 100%;
+  padding: 12px;  /* Increased padding for better spacing */
+  margin-bottom: 15px;
+  border: 1px solid ;
+  border-radius: 15px;  /* Removed border-radius for rectangular look */
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 20px;
+  border: 1px solid #4caf50;
+  border-radius: 0px;  /* Removed border-radius for rectangular look */
+  cursor: pointer;
+  margin-right: 10px;
+  width: auto;
+}
+
+form button[type="reset"] {
+  background-color: #f44336;
+  border: 1px solid #f44336;
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+form button[type="reset"]:hover {
+  opacity: 0.8;
+}
+.task-manager{
+background-color: rgb(37, 71, 51);
+background: url('../as.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+.section-header{
+  text-align: center;
+}
+legend{
+  color: white;
+}
+label{
+  color: white;
+}
+.category-section{
+  border-radius: 15px;
+ background-color: rgb(11, 11, 11);
+}
+.actions-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

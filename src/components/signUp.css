@@ -1,0 +1,220 @@
+/* Style pour le container principal */
+.signup-wrapper {
+  background: url('../s.png') no-repeat fixed  center;
+  background-size: 100% 100%;
+  animation: gradientBG 10s ease infinite;
+  display: flex;
+  ;
+  justify-content: center ;
+  align-items: center;
+  height: 100vh;
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animation pour le fond */
+@keyframes gradientBG {
+  0% {
+    background-position: 10% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Bulles en arrière-plan */
+.signup-wrapper::before,
+.signup-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  filter: blur(120px);
+  animation: moveBubbles 10s infinite alternate;
+}
+
+.signup-wrapper::before {
+  top: -100px;
+  left: -150px;
+}
+
+.signup-wrapper::after {
+  bottom: -100px;
+  right: -150px;
+}
+
+/* Animation des bulles */
+@keyframes moveBubbles {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+/* Style du formulaire */
+.signup-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(20px);
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 120px;
+}
+
+/* Titre */
+.signup-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+/* Champs de formulaire */
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.label-email, .label-nom, .label-prenom, .label-telephone, .label-adresse, .label-ville, .label-password, .label-confirmPassword {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.input-email, .input-nom, .input-prenom, .input-telephone, .input-adresse, .input-ville, .input-password, .input-confirmPassword {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation sur le focus des champs */
+.input-email:focus, .input-nom:focus, .input-prenom:focus, .input-telephone:focus, .input-adresse:focus, .input-ville:focus, .input-password:focus, .input-confirmPassword:focus {
+  outline: none;
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton */
+.signup-btn {
+  background: linear-gradient(90deg, #4a90e2, #357abd);
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  transform: scale(1.02);
+  background: linear-gradient(90deg, #357abd, #4a90e2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Message d'erreur */
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Animation d'entrée pour le formulaire */
+.signup-wrapper form {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+fieldset {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+form label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+form input[type="text"],
+form input[type="date"] {
+  width: 100%;
+  padding: 12px;  /* Increased padding for better spacing */
+  margin-bottom: 15px;
+  border: 1px solid ;
+  border-radius: 15px;  /* Removed border-radius for rectangular look */
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 20px;
+  border: 1px solid #4caf50;
+  border-radius: 0px;  /* Removed border-radius for rectangular look */
+  cursor: pointer;
+  margin-right: 10px;
+  width: auto;
+}
+
+form button[type="reset"] {
+  background-color: #f44336;
+  border: 1px solid #f44336;
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+form button[type="reset"]:hover {
+  opacity: 0.8;
+}
+.task-manager{
+background-color: rgb(37, 71, 51);
+}
+.section-header{
+  text-align: center;
+}
+legend{
+  color: white;
+}
+label{
+  color: white;
+}
