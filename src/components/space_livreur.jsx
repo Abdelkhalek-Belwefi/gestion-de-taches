@@ -105,7 +105,7 @@ export const  Space_livreur = () => {
                     <td>{task.timeNeeded}</td>
                     <td>{task.comment}</td>
                     <td>{task.priority}</td>
-                    <td><button className="action-btn">À faire</button></td>
+                    <td><button className="action-btn">marquer comme fait</button></td>
                   </tr>
                 ))}
               </tbody>

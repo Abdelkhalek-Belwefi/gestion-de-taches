@@ -112,7 +112,7 @@ export const Space_ouvrier = () => {
                     <td>{task.temps_necessaire}</td>
                     <td>{task.commentaire}</td>
                     <td>{task.priorite}</td>
-                    <td><button className="bt3" onClick={faire}>A faire</button></td>
+                    <td><button className="bt3" onClick={faire}>marque comme fait</button></td>
                   </tr>
                 ))}
               </tbody>
