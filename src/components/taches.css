@@ -1,4 +1,4 @@
-/* Main container */
+
 .task-manager {
   padding: 20px;
   background-color: #f8f8f8;
@@ -103,10 +103,10 @@ form label {
 form input[type="text"],
 form input[type="date"] {
   width: 100%;
-  padding: 12px;  /* Increased padding for better spacing */
+  padding: 12px; 
   margin-bottom: 15px;
   border: 1px solid ;
-  border-radius: 15px;  /* Removed border-radius for rectangular look */
+  border-radius: 15px;  
   box-sizing: border-box;
 }
 
@@ -115,7 +115,7 @@ form button {
   color: #fff;
   padding: 12px 20px;
   border: 1px solid #4caf50;
-  border-radius: 0px;  /* Removed border-radius for rectangular look */
+  border-radius: 0px;  
   cursor: pointer;
   margin-right: 10px;
   width: auto;

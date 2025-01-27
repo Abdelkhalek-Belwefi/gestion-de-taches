@@ -1,4 +1,4 @@
-/* Style pour le container principal */
+
 .signup-wrapper {
   background: url('../s.png') no-repeat fixed  center;
   background-size: 100% 100%;
@@ -14,7 +14,7 @@
   overflow: hidden;
 }
 
-/* Animation pour le fond */
+
 @keyframes gradientBG {
   0% {
     background-position: 10% 50%;
@@ -27,7 +27,7 @@
   }
 }
 
-/* Bulles en arrière-plan */
+
 .signup-wrapper::before,
 .signup-wrapper::after {
   content: '';
@@ -50,7 +50,7 @@
   right: -150px;
 }
 
-/* Animation des bulles */
+
 @keyframes moveBubbles {
   0% {
     transform: translateY(0px);
@@ -60,7 +60,7 @@
   }
 }
 
-/* Style du formulaire */
+
 .signup-form {
   background: rgba(255, 255, 255, 0.1);
   padding: 2rem;
@@ -74,14 +74,14 @@
   margin-bottom: 120px;
 }
 
-/* Titre */
+
 .signup-form h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: #fff;
 }
 
-/* Champs de formulaire */
+
 .input-group {
   margin-bottom: 1.5rem;
 }
@@ -105,14 +105,14 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Animation sur le focus des champs */
+
 .input-email:focus, .input-nom:focus, .input-prenom:focus, .input-telephone:focus, .input-adresse:focus, .input-ville:focus, .input-password:focus, .input-confirmPassword:focus {
   outline: none;
   transform: scale(1.02);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Bouton */
+
 .signup-btn {
   background: linear-gradient(90deg, #4a90e2, #357abd);
   color: #fff;
@@ -131,14 +131,13 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Message d'erreur */
 .error-message {
   color: red;
   font-size: 1rem;
   margin-top: 1rem;
 }
 
-/* Animation d'entrée pour le formulaire */
+
 .signup-wrapper form {
   animation: fadeIn 1s ease forwards;
   opacity: 0;
@@ -176,10 +175,10 @@ form label {
 form input[type="text"],
 form input[type="date"] {
   width: 100%;
-  padding: 12px;  /* Increased padding for better spacing */
+  padding: 12px; 
   margin-bottom: 15px;
   border: 1px solid ;
-  border-radius: 15px;  /* Removed border-radius for rectangular look */
+  border-radius: 15px; 
   box-sizing: border-box;
 }
 
@@ -188,7 +187,7 @@ form button {
   color: #fff;
   padding: 12px 20px;
   border: 1px solid #4caf50;
-  border-radius: 0px;  /* Removed border-radius for rectangular look */
+  border-radius: 0px; 
   cursor: pointer;
   margin-right: 10px;
   width: auto;
