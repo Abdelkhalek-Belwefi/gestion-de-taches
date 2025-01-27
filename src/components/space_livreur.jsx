@@ -23,6 +23,7 @@ export const  Space_livreur = () => {
     { id: 3, column: "tâches d'aujourd'hui", location: "Gafsa", activity: "Réception", deadline: "1 janvier", status: "à faire", timeNeeded: "1:00", comment: "slslsl", priority: "haute" },
     { id: 3, column: "tâches d'aujourd'hui", location: "Gafsa", activity: "Réception", deadline: "2 février", status: "à faire", timeNeeded: "1:00", comment: "slslsl", priority: "haute" },
   ];
+  
 
   const handleLogin = () => setIsLoggedIn(true);
 
@@ -44,15 +45,16 @@ export const  Space_livreur = () => {
           )}
         </div>
 
-       
+       {/* en va construire le menu de profil */}
         <div className="profile-bubble" onClick={() => setShowProfileMenu(!showProfileMenu)}>
           <p><img src='../param.png' alt="" /></p>
-          <p>Profil</p>
+          <p>Profile</p>
           {showProfileMenu && (
             <div className="profile-dropdown">
               <ul>
-                <li><img src="image utilisateur" alt="" />...................@livreur.com</li>
-                <li> <Link to="/profile">  profile</Link></li>
+                <li><img src="image utilisateur" alt="" />nom de utulisateur@livreur.com</li>
+                <br />
+                <li> <Link to="/profile"> profile</Link></li>
                 <li> <Link to="/parametre">  parametre</Link></li>
                 <li> <Link to="/login">  deconnection</Link></li>
               </ul>
@@ -111,11 +113,11 @@ export const  Space_livreur = () => {
               </tbody>
             </table>
           ) : (
-            <p>Aucune tâche trouvée pour cette colonne.</p>
+            <p className="p_black">Aucune tâche trouvée pour cette colonne.</p>
           )}
         </div>
       ) : (
-        <p>Sélectionnez une colonne pour voir les tâches.</p>
+        <p className="p_black">Sélectionnez une colonne pour voir les tâches.</p>
       )}
     </div>
   );

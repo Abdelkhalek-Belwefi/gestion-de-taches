@@ -112,7 +112,7 @@ export const Space_admin = () => {
               <label htmlFor="priority">Priorité</label>
               <input type="text" name="priority" id="priority" />
 
-              <button type="submit">Ajouter</button>
+              <button type="submit">modifier</button>
               <button type="reset">Annuler</button>
             </form>
            
