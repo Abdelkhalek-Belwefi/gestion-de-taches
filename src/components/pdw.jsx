@@ -8,17 +8,14 @@ const Pdw = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Simuler la validation d'email
+  
     if (!email) {
       setError("L'email est requis.");
       setMessage("");
       return;
     }
 
-    // Vous pouvez ajouter ici la logique pour envoyer une requête à une API dans un vrai scénario.
-    // Exemple : Axios.post('/reset-password', { email })...
-    
-    // Simuler la réponse
+  
     setMessage(`Un lien de réinitialisation de mot de passe a été envoyé à ${email}.`);
     setError("");
   };

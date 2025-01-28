@@ -28,18 +28,18 @@ export const Space_ouvrier = () => {
   const handleLogin = () => setIsLoggedIn(true);
 
   const faire = () => {
-    // Logique pour marquer la tâche comme faite
+   
     console.log("Tâche marquée comme faite");
   };
 
-  // Filter tasks based on selected column
+
   const filteredTasks = tasks.filter((task) => task.colonne === selectedColonne);
 
   return (
     <div className="task-managere">
-      {/* Header Section */}
+    
       <div className="header">
-        {/* Notification Bubble */}
+     
         <div className="notification-bubble" onClick={() => setShowNotificationMenu(!showNotificationMenu)}>
           <p><img src="C:\Users\aminm\Desktop\application de gestion de taches\gestion-de-taches\src\noti.png" alt="" /></p>
           <p>notification</p>
@@ -50,7 +50,6 @@ export const Space_ouvrier = () => {
           )}
         </div>
 
-        {/* Profile Bubble */}
         <div className="profile-bubble" onClick={() => setShowProfileMenu(!showProfileMenu)}>
           <p><img src="../param.png" alt="" /></p>
           <p>profile</p>
@@ -67,7 +66,7 @@ export const Space_ouvrier = () => {
         </div>
       </div>
 
-      {/* Main Content */}
+    
       <h2 className="colonne-title">Voici les tâches</h2>
 
       <div className="colonne-cards-container">
@@ -112,7 +111,11 @@ export const Space_ouvrier = () => {
                     <td>{task.temps_necessaire}</td>
                     <td>{task.commentaire}</td>
                     <td>{task.priorite}</td>
-                    <td><button className="bt3" onClick={faire}>marque comme fait</button></td>
+                    <td><button className="action-btn" alt='en ratrd'>⏳   </button>
+                      <button className="action-btn">✅  
+                      </button>
+                   
+                      </td>
                   </tr>
                 ))}
               </tbody>

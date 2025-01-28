@@ -12,7 +12,7 @@ export const Space_personnel = () => {
     { id: 1, name: "tâches d'aujourd'hui" },
     { id: 2, name: "tâches de demain" },
   ];
-
+//en echanger ca avec une base de donnees
   const tasks = [
     { id: 1, colonne: "tâches d'aujourd'hui", activite: "Gestion des stocks", date_limite: "15 mars", statut: "a faire", temps_necessaire: "2:30", commentaire: "Vérifier l'état des stocks", priorite: "moyenne" },
     { id: 2, colonne: "tâches d'aujourd'hui", activite: "Réunion avec les équipes", date_limite: "20 avril", statut: "a faire", temps_necessaire: "4:00", commentaire: "Discuter des objectifs de la semaine", priorite: "haute" },
@@ -27,9 +27,9 @@ export const Space_personnel = () => {
 
   return (
     <div className="task-managerp">
-      {/* Header Section */}
+   
       <div className="header">
-        {/* Notification Bubble */}
+       
         <div className="notification-bubble" onClick={() => setShowNotificationMenu(!showNotificationMenu)}>
           <p><img src="../noti.png" alt="" /></p>
           <p>Notifications</p>
@@ -40,7 +40,7 @@ export const Space_personnel = () => {
           )}
         </div>
 
-        {/* Profile Bubble */}
+        
         <div className="profile-bubble" onClick={() => setShowProfileMenu(!showProfileMenu)}>
           <p><img src="../param.png" alt="" /></p>
           <p>Profil</p>
@@ -57,7 +57,6 @@ export const Space_personnel = () => {
         </div>
       </div>
 
-      {/* Main Content */}
       <h2 className="colonne-title">Voilà les tâches</h2>
 
       <div className="colonne-cards-container">
@@ -99,7 +98,11 @@ export const Space_personnel = () => {
                     <td>{task.temps_necessaire}</td>
                     <td>{task.commentaire}</td>
                     <td>{task.priorite}</td>
-                    <td><button className="bt3">Marquer comme fait</button></td>
+                    <td><button className="action-btn" alt='en ratrd'>⏳   </button>
+                      <button className="action-btn">✅  
+                      </button>
+                      
+                      </td>
                   </tr>
                 ))}
               </tbody>

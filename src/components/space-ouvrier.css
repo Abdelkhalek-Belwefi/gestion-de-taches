@@ -1,4 +1,4 @@
-/* Global Styling */
+
 .task-manager {
     font-family: Arial, sans-serif;
     padding: 200px;
@@ -7,7 +7,7 @@
     color: #333;
   }
   
-  /* Title Styling */
+  
   .colonne-title {
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
@@ -16,7 +16,7 @@
     color: #01ff1a;
   }
   
-  /* Colonne Cards */
+  
   .colonne-cards-container {
     display: flex;
     justify-content: center;
@@ -45,22 +45,20 @@
     background-color: #9e6ec5;
     border-color: #0056b3;
   }
-  
-  /* Section Header */
+   
   .section-head {
     font-size: 1.3rem;
     margin-bottom: 20px;
     color: #ffffff;
   }
   
-  /* No Colonne Message */
+
   .no-colonne-message {
     text-align: center;
     font-style: italic;
     color: #777;
   }
-  
-  /* Table Styling */
+
   .task-table {
     width: 100%;
     border-collapse: collapse;
@@ -93,7 +91,7 @@
     color: #333;
   }
   
-  /* Highlighting Priority */
+
   .task-table td:nth-child(7) {
     font-weight: bold;
   }

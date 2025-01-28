@@ -5,12 +5,12 @@ import "./nav.css";
 export const Navigation = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Toggle function for dark mode
+
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
 
-  // Load theme from localStorage
+ 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
@@ -18,7 +18,7 @@ export const Navigation = () => {
     }
   }, []);
 
-  // Update the theme and store it in localStorage
+
   useEffect(() => {
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
     document.body.className = isDarkMode ? "dark-mode" : "light-mode";
@@ -33,7 +33,7 @@ export const Navigation = () => {
            </a>
           
         </div>
-{/* Navigation bar container */}
+
      
 
         <div className="navbar-right">

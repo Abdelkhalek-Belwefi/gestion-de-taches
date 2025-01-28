@@ -45,7 +45,7 @@ export const  Space_livreur = () => {
           )}
         </div>
 
-       {/* en va construire le menu de profil */}
+       
         <div className="profile-bubble" onClick={() => setShowProfileMenu(!showProfileMenu)}>
           <p><img src='../param.png' alt="" /></p>
           <p>Profile</p>
@@ -63,7 +63,7 @@ export const  Space_livreur = () => {
         </div>
       </div>
 
-      {/* Main Content */}
+      
       <h2 className="tasks-title">Voilà les tâches</h2>
 
       <div className="column-cards-container">
@@ -107,7 +107,12 @@ export const  Space_livreur = () => {
                     <td>{task.timeNeeded}</td>
                     <td>{task.comment}</td>
                     <td>{task.priority}</td>
-                    <td><button className="action-btn">marquer comme fait</button></td>
+                    <td><button className="action-btn" alt='en ratrd'>⏳   </button>
+                      <button className="action-btn">✅  
+                      </button>
+                     
+                      </td>
+                    
                   </tr>
                 ))}
               </tbody>
