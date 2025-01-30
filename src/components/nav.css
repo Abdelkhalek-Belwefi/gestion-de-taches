@@ -299,3 +299,16 @@ a:focus,
   outline: none;
   outline-offset: none;
 }
+/* Mode sombre : fond du body noir et texte blanc */
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Mode clair : fond du body blanc et texte noir */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

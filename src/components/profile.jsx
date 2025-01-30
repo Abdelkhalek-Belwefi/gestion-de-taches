@@ -8,6 +8,17 @@ export const Profile = () => {
       <div className="profile-header">
         <div className="profile-avatar">
           <img src="/img/profile.png" alt="Profile" />
+                <p>
+                   <input 
+                     type="file" 
+                     id="imageUpload" 
+                     accept="image/*" 
+                     style={{ display: 'none' }}
+                   />
+                   <button onClick={() => document.getElementById('imageUpload').click()}>
+                     +
+                   </button>
+                </p>
         </div>
         <div className="profile-details">
           <h1 className="profile-name">Nom de l'utilisateur</h1>
