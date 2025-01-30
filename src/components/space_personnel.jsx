@@ -31,7 +31,7 @@ export const Space_personnel = () => {
       <div className="header">
        
         <div className="notification-bubble" onClick={() => setShowNotificationMenu(!showNotificationMenu)}>
-          <p><img src="../noti.png" alt="" /></p>
+          <p><img src="./img/noti.png" alt="" /></p>
           <p>Notifications</p>
           {showNotificationMenu && (
             <div className="notification-list">
@@ -42,15 +42,15 @@ export const Space_personnel = () => {
 
         
         <div className="profile-bubble" onClick={() => setShowProfileMenu(!showProfileMenu)}>
-          <p><img src="../param.png" alt="" /></p>
+          <p><img src="./img/profile.png" alt="" /></p>
           <p>Profil</p>
           {showProfileMenu && (
             <div className="profile-menu">
               <ul>
                 <li><img src="image utilisateur" alt="" />...................@livreur.com</li>
                 <li> <Link to="/profile">  profile</Link></li>
-                <li> <Link to="/parametre">  parametre</Link></li>
-                <li> <Link to="/login">  deconnection</Link></li>
+                <li> <img src="./img/parm.png" alt="" /><Link to="/parametre">  parametre</Link></li>
+                <li><img src="./img/dec.png" alt="" /> <Link to="/login">  deconnection</Link></li>
               </ul>
             </div>
           )}

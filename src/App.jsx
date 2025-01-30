@@ -13,6 +13,7 @@ import { Space_admin } from "./components/space_admin";
 import { Space_livreur } from "./components/space_livreur";
 import { Space_ouvrier } from "./components/space_ouvrier";
 import {Space_personnel} from "./components/space_personnel";
+import { Profile} from "./components/profile";
 import Learn from "./components/leran";
 
 
@@ -51,6 +52,7 @@ const App = () => {
           <Route path="/space_personnel" component={Space_personnel} />
           <Route path="/pdw" component={Pdw} />
           <Route path="/learn" component={Learn} />
+          <Route path="/profile" component={Profile} />
      
         </Switch>
       </div>

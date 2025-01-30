@@ -24,7 +24,46 @@
   position: relative;
   margin-left: 20px;
   cursor: pointer;
+  
+    animation: backgroundAnime 20s ease infinite;
+  }
+  
+  @keyframes backgroundAnime {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+
+
+.notification-bubble:hover,
+.profile-bubble:hover {
+  transform: scale(1.1);
 }
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.notification-dropdown,
+.profile-dropdown {
+  animation: slideIn 0.3s ease-out;
+}
+
 
 .notification-bubble img,
 .profile-bubble img {
@@ -160,4 +199,7 @@
 }
 .p_black{
   color : white
+}
+.noti{
+  background-position: center;
 }

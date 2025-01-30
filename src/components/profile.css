@@ -1,0 +1,103 @@
+/* Conteneur principal */
+.profile-wrapper {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    background: url('C:\Users\aminm\Desktop\application de gestion de taches\gestion-de-taches\public\img\backb.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* En-tête du profil */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  /* Image de profil */
+  .profile-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+  }
+  
+  /* Détails du profil */
+  .profile-details {
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .profile-name {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .profile-role {
+    color: #007bff;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .profile-location {
+    color: gray;
+    color: white;
+  }
+  
+  /* Corps du profil */
+  .profile-body {
+    padding: 20px;
+  }
+  
+  /* Sections de contenu */
+  .profile-section {
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .profile-section h2 {
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .profile-section p {
+    margin: 5px 0;
+    color: #555;
+    color: white;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .profile-wrapper {
+      width: 90%;
+    }
+  
+    .profile-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+  
+    .profile-details {
+      margin-left: 0;
+      margin-top: 10px;
+      color: white;
+    }
+  }
+  

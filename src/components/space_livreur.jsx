@@ -36,7 +36,7 @@ export const  Space_livreur = () => {
       <div className="header-section">
         
         <div className="notification-bubble" onClick={() => setShowNotificationMenu(!showNotificationMenu)}>
-          <p><img src="C:\noti.png" alt="" /></p>
+          <p><img src="./img/noti.png" alt="" className="noti" /></p>
           <p>Notification</p>
           {showNotificationMenu && (
             <div className="notification-dropdown">
@@ -47,7 +47,7 @@ export const  Space_livreur = () => {
 
        
         <div className="profile-bubble" onClick={() => setShowProfileMenu(!showProfileMenu)}>
-          <p><img src='../param.png' alt="" /></p>
+          <p><img src='./img/profile.png' alt="" /></p>
           <p>Profile</p>
           {showProfileMenu && (
             <div className="profile-dropdown">
@@ -55,8 +55,8 @@ export const  Space_livreur = () => {
                 <li><img src="image utilisateur" alt="" />nom de utulisateur@livreur.com</li>
                 <br />
                 <li> <Link to="/profile"> profile</Link></li>
-                <li> <Link to="/parametre">  parametre</Link></li>
-                <li> <Link to="/login">  deconnection</Link></li>
+                <li> <img src="./img/pam.png" alt="" /><Link to="/parametre">  parametre</Link></li>
+                <li> <img src="./img/dec.png" alt="" /><Link to="/login">  deconnection</Link></li>
               </ul>
             </div>
           )}

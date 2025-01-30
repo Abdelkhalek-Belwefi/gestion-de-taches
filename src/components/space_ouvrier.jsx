@@ -41,7 +41,7 @@ export const Space_ouvrier = () => {
       <div className="header">
      
         <div className="notification-bubble" onClick={() => setShowNotificationMenu(!showNotificationMenu)}>
-          <p><img src="C:\Users\aminm\Desktop\application de gestion de taches\gestion-de-taches\src\noti.png" alt="" /></p>
+          <p><img src="./img/noti.png" alt="" /></p>
           <p>notification</p>
           {showNotificationMenu && (
             <div className="notification-list">
@@ -51,15 +51,15 @@ export const Space_ouvrier = () => {
         </div>
 
         <div className="profile-bubble" onClick={() => setShowProfileMenu(!showProfileMenu)}>
-          <p><img src="../param.png" alt="" /></p>
+          <p><img src="./img/profile.png" alt="" /></p>
           <p>profile</p>
           {showProfileMenu && (
             <div className="profile-menu">
               <ul>
                 <li><img src="image utilisateur" alt="" />...................@livreur.com</li>
                 <li> <Link to="/profile">  profile</Link></li>
-                <li> <Link to="/parametre">  parametre</Link></li>
-                <li> <Link to="/login">  deconnection</Link></li>
+                <li><img src="./img/pam.png" alt="" /> <Link to="/parametre">  parametre</Link></li>
+                <li><img src="./img/dec.png" alt="" /> <Link to="/login">  deconnection</Link></li>
               </ul>
             </div>
           )}
