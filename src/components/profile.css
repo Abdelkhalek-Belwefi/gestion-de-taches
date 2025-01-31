@@ -1,4 +1,4 @@
-/* Conteneur principal */
+
 .profile-wrapper {
     width: 50%;
     margin: auto;
@@ -14,7 +14,7 @@
     font-family: "Arial", sans-serif;
   }
   
-  /* En-tête du profil */
+  
   .profile-header {
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@
     border-bottom: 2px solid #f0f0f0;
   }
   
-  /* Image de profil */
+
   .profile-avatar img {
     width: 100px;
     height: 100px;
@@ -31,7 +31,7 @@
     border: 3px solid #007bff;
   }
   
-  /* Détails du profil */
+ 
   .profile-details {
     margin-left: 20px;
     color: white;
@@ -55,12 +55,11 @@
     color: white;
   }
   
-  /* Corps du profil */
   .profile-body {
     padding: 20px;
   }
   
-  /* Sections de contenu */
+
   .profile-section {
     margin-bottom: 15px;
     color: white;
@@ -81,7 +80,7 @@
     color: white;
   }
   
-  /* Responsive design */
+
   @media (max-width: 768px) {
     .profile-wrapper {
       width: 90%;
